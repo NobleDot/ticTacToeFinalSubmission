@@ -1,0 +1,160 @@
+body{
+    background: #001200;
+    color: aquamarine;
+    font-family: Georgia, sans-serif;
+}
+
+myHeader{
+    display: flex;
+    justify-content: center;
+
+    /* Found a way to dynamically change the size of text!  */
+    /* Awesome, can get this to work well on Mobile hopefully! */
+    /* Source: https://stackoverflow.com/questions/14431411/pure-css-to-make-font-size-responsive-based-on-dynamic-amount-of-characters */
+    font-size: 30px;
+    font-size: 5vw; 
+}
+
+window{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    align-content: space-evenly;
+}
+
+settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 30vw;
+    height: 10vw;
+    border: 3px;
+
+    border-style: solid;   
+}
+
+.players-prompt{
+    font-size: 2vw;
+    display: flex;
+
+    width: 30vw;
+    flex-direction: column;
+    align-items: center;
+
+    border-style: solid;
+}
+
+.gamemode-options{
+    display: flex;
+    flex-direction: row;
+
+    height: 8vw;
+
+    justify-content: center;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.gamemode-select{
+    background-color: aquamarine;
+}
+
+.gamemode-unselect{
+    background-color: #224d6b
+}
+
+gamemodeOptionButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 10vw;
+    height: 4vw;
+
+    font-size: 3vw;
+    color: black
+}
+
+resetBoardButton{
+    display: flex;
+
+    background-color: rgb(0, 0, 163);
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 4vw;
+
+    font-size: 1vw;
+}
+
+/* Should just be blank?  */
+.gameStatus-default {
+    display: flex;
+}
+
+gameStatus-inProgress{
+    display: flex;
+    width: 30vw;
+
+}
+
+gameboard{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+
+    width: 30vw;
+    height: 30vw;
+    border: 2px;
+
+    border-style: solid;
+
+    justify-content: space-evenly;
+}
+rowofzones{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+zone{
+    display: flex;
+    /* width: 8vw; */
+    width: 8vw;
+    height: 8vw;
+
+    background: green;
+}
+
+/* zone unoccupied defintion*/
+
+
+/* zone occupied by player 1 */
+.zone-player1{
+    background-image: url("media/circle-white.png");
+    background-repeat: no-repeat;
+    background-size: 8vw;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* zone occupied by player 2 */
+.zone-player2{
+    background-image: url("media/cross-white.png");
+    background-repeat: no-repeat;
+    background-size: 8vw;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
